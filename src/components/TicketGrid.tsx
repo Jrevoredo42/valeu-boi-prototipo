@@ -1,5 +1,3 @@
-import { Square, CircleDot } from 'lucide-react';
-
 interface Ticket {
   id: number;
   status: 'available' | 'pending' | 'sold';
@@ -11,7 +9,7 @@ interface TicketGridProps {
   categoryPrice: number;
 }
 
-export function TicketGrid({ tickets, onTicketClick, categoryPrice }: TicketGridProps) {
+export function TicketGrid({ tickets, onTicketClick, categoryPrice: _categoryPrice }: TicketGridProps) {
   const getTicketStyle = (status: 'available' | 'pending' | 'sold') => {
     switch (status) {
       case 'available':
