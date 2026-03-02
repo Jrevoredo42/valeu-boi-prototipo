@@ -39,7 +39,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-[#c41e3a]">Valeu</span>
+              <span className="text-2xl font-bold text-[#ffB900]">Valeu</span>
               <span className="text-2xl font-bold text-white ml-1">Boi</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-sm">
@@ -67,7 +67,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-[#c41e3a] transition-colors"
+                    className="text-gray-400 hover:text-[#ffB900] transition-colors"
                   >
                     {link.label}
                   </a>
@@ -83,7 +83,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-[#c41e3a] transition-colors"
+                    className="text-gray-400 hover:text-[#ffB900] transition-colors"
                   >
                     {link.label}
                   </a>
@@ -99,7 +99,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-[#c41e3a] transition-colors"
+                    className="text-gray-400 hover:text-[#ffB900] transition-colors"
                   >
                     {link.label}
                   </a>
@@ -123,7 +123,7 @@ export function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#c41e3a] hover:border-[#c41e3a] transition-all duration-300"
+                  className="w-10 h-10 bg-[#1a1a1a] border border-[#2a2a2a] rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#ffB900] hover:border-[#ffB900] transition-all duration-300"
                 >
                   <social.icon size={20} />
                 </a>

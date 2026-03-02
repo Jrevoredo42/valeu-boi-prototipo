@@ -8,18 +8,18 @@ export function CategoriesSection() {
       name: 'Profissional',
       description: 'Para vaqueiros experientes e competidores profissionais.',
       features: ['Premiação alta', 'Competição acirrada', 'Rankings nacionais'],
-      gradientFrom: '#c41e3a',
-      gradientTo: '#8b1c2f',
-      borderColor: '#c41e3a',
+      gradientFrom: '#ffB900',
+      gradientTo: '#cc9400',
+      borderColor: '#ffB900',
     },
     {
       icon: Star,
       name: 'Amador',
       description: 'Ideal para quem está começando na vaquejada.',
       features: ['Ambiente amigável', 'Aprendizado', 'Premiação justa'],
-      gradientFrom: '#e67e22',
-      gradientTo: '#d35400',
-      borderColor: '#e67e22',
+      gradientFrom: '#c41e3a',
+      gradientTo: '#8b1c2f',
+      borderColor: '#c41e3a',
       featured: true,
     },
     {
@@ -27,18 +27,18 @@ export function CategoriesSection() {
       name: 'Feminino',
       description: 'Categoria exclusiva para vaqueiras.',
       features: ['Competição feminina', 'Premiação especial', 'Networking'],
-      gradientFrom: '#c41e3a',
-      gradientTo: '#8b1c2f',
-      borderColor: '#c41e3a',
+      gradientFrom: '#ffB900',
+      gradientTo: '#cc9400',
+      borderColor: '#ffB900',
     },
     {
       icon: Baby,
       name: 'Mirim',
       description: 'Para jovens promessas da vaquejada.',
       features: ['Formação de atletas', 'Supervisão', 'Troféus'],
-      gradientFrom: '#e67e22',
-      gradientTo: '#d35400',
-      borderColor: '#e67e22',
+      gradientFrom: '#c41e3a',
+      gradientTo: '#8b1c2f',
+      borderColor: '#c41e3a',
     },
   ];
 
@@ -47,7 +47,7 @@ export function CategoriesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Escolha Sua <span className="text-[#c41e3a]">Categoria</span>
+            Escolha Sua <span className="text-[#ffB900]">Categoria</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Temos opções para todos os níveis de experiência
@@ -58,7 +58,7 @@ export function CategoriesSection() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className={`animate-card relative overflow-visible bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] rounded-2xl border-2 p-6 hover:transform hover:scale-105 transition-all duration-300 ${
+              className={`animate-card relative overflow-visible bg-linear-to-br from-[#1a1a1a] to-[#0f0f0f] rounded-2xl border-2 p-6 hover:transform hover:scale-105 transition-all duration-300 ${
                 category.featured ? 'lg:scale-105 shadow-2xl' : ''
               }`}
               style={{ borderColor: category.borderColor }}
@@ -67,7 +67,7 @@ export function CategoriesSection() {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                   <span 
                     className="text-white px-4 py-1 rounded-full text-sm font-bold inline-block"
-                    style={{ backgroundColor: '#e67e22' }}
+                    style={{ backgroundColor: '#c41e3a' }}
                   >
                     MAIS POPULAR
                   </span>
@@ -82,7 +82,7 @@ export function CategoriesSection() {
               </div>
 
               <h3 className="text-2xl font-bold text-white mb-2">{category.name}</h3>
-              <p className="text-gray-400 mb-4 min-h-[3rem]">{category.description}</p>
+              <p className="text-gray-400 mb-4 min-h-12">{category.description}</p>
 
               <div className="mb-6">
                 <div className="text-sm text-gray-500">por senha</div>
@@ -111,15 +111,15 @@ export function CategoriesSection() {
         </div>
 
         {/* Casadinha Info */}
-        <div className="mt-16 bg-gradient-to-r from-[#1a1a1a] via-[#2a1a1a] to-[#1a1a1a] border border-[#c41e3a]/30 rounded-2xl p-8 text-center">
+        <div className="mt-16 bg-linear-to-r from-[#1a1a1a] via-[#2a1a1a] to-[#1a1a1a] border border-[#ffB900]/30 rounded-2xl p-8 text-center">
           <div className="flex items-center justify-center mb-4">
-            <Users2 className="text-[#c41e3a] mr-3" size={40} />
+            <Users2 className="text-[#ffB900] mr-3" size={40} />
             <h3 className="text-3xl font-bold text-white">Senha Casadinha</h3>
           </div>
           <p className="text-xl text-gray-300 mb-6">
             Compre senhas em dupla (Puxador + Esteireiro)
           </p>
-          <Button size="lg" className="bg-[#c41e3a] hover:bg-[#a01828] text-white">
+          <Button size="lg" className="bg-[#ffB900] hover:bg-[#e6a700] text-black">
             Ver Senhas Casadinhas
           </Button>
         </div>

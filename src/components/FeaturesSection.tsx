@@ -6,37 +6,37 @@ export function FeaturesSection() {
       icon: Ticket,
       title: 'Compra Rápida',
       description: 'Adquira suas senhas em poucos cliques, sem complicação.',
-      iconColor: '#c41e3a',
+      iconColor: '#ffB900',
     },
     {
       icon: Shield,
       title: 'Pagamento Seguro',
       description: 'Transações protegidas com as melhores tecnologias de segurança.',
-      iconColor: '#e67e22',
+      iconColor: '#c41e3a',
     },
     {
       icon: Clock,
       title: 'Disponível 24/7',
       description: 'Compre suas senhas a qualquer hora, de qualquer lugar.',
-      iconColor: '#c41e3a',
+      iconColor: '#ffB900',
     },
     {
       icon: TrendingUp,
       title: 'Acompanhamento',
       description: 'Veja seus resultados e histórico de participações.',
-      iconColor: '#e67e22',
+      iconColor: '#c41e3a',
     },
     {
       icon: Users,
       title: 'Senhas Casadinhas',
       description: 'Compre senhas individuais ou em dupla para competir junto.',
-      iconColor: '#c41e3a',
+      iconColor: '#ffB900',
     },
     {
       icon: MapPin,
       title: 'Eventos Regionais',
       description: 'Encontre vaquejadas próximas a você em todo o país.',
-      iconColor: '#e67e22',
+      iconColor: '#c41e3a',
     },
   ];
 
@@ -45,7 +45,7 @@ export function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Por Que Escolher o <span className="text-[#c41e3a]">Valeu Boi</span>?
+            Por Que Escolher o <span className="text-[#ffB900]">Valeu Boi</span>?
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Oferecemos a melhor experiência para vaqueiros profissionais e amadores.
@@ -56,12 +56,12 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="animate-card group bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] p-8 rounded-2xl border border-[#2a2a2a] transition-all duration-300 hover:transform hover:scale-105"
+              className="animate-card group bg-linear-to-br from-[#1a1a1a] to-[#0f0f0f] p-8 rounded-2xl border border-[#2a2a2a] transition-all duration-300 hover:transform hover:scale-105"
               style={{ 
                 borderColor: '#2a2a2a',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#e67e22';
+                e.currentTarget.style.borderColor = '#c41e3a';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = '#2a2a2a';

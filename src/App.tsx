@@ -2,7 +2,6 @@ import { useEffect, useLayoutEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { FeaturesSection } from './components/FeaturesSection';
-import { HowItWorksSection } from './components/HowItWorksSection';
 import { CategoriesSection } from './components/CategoriesSection';
 import { CTASection } from './components/CTASection';
 import { Footer } from './components/Footer';
@@ -82,9 +81,8 @@ export default function App() {
     <div className="min-h-screen bg-[#0a0a0a]">
       <Navbar />
       <HeroSection />
-      <FeaturesSection />
-      <HowItWorksSection />
       <CategoriesSection />
+      <FeaturesSection />
       <CTASection />
       <Footer />
     </div>

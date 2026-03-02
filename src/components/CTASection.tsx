@@ -4,7 +4,7 @@ import { ImageWithFallback } from './shared/ImageWithFallback';
 
 export function CTASection() {
   return (
-    <section className="animate-section py-20 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
+    <section className="animate-section py-20 bg-linear-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-10">
         <ImageWithFallback
@@ -15,13 +15,13 @@ export function CTASection() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-10 left-10 w-64 h-64 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(196, 30, 58, 0.1)' }} />
-      <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(230, 126, 34, 0.1)' }} />
+      <div className="absolute top-10 left-10 w-64 h-64 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(255, 185, 0, 0.1)' }} />
+      <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(196, 30, 58, 0.1)' }} />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="bg-gradient-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/80 backdrop-blur-xl rounded-3xl p-12 sm:p-16" style={{ border: '2px solid rgba(230, 126, 34, 0.3)' }}>
+        <div className="bg-linear-to-br from-[#1a1a1a]/80 to-[#0f0f0f]/80 backdrop-blur-xl rounded-3xl p-12 sm:p-16" style={{ border: '2px solid rgba(196, 30, 58, 0.3)' }}>
           <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#c41e3a] to-[#8b1c2f] rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-linear-to-br from-[#ffB900] to-[#cc9400] rounded-full mb-6">
               <Ticket size={40} className="text-white" />
             </div>
           </div>
@@ -37,7 +37,7 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="bg-[#c41e3a] hover:bg-[#a01828] text-white px-10 py-7 text-lg group"
+              className="bg-[#ffB900] hover:bg-[#e6a700] text-black px-10 py-7 text-lg group"
             >
               Começar Agora
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={24} />
@@ -45,17 +45,17 @@ export function CTASection() {
             <button
               className="px-10 py-4 text-lg font-medium rounded-md transition-all duration-300 hovercursor-pointer"
               style={{ 
-                border: '2px solid #e67e22', 
-                color: '#e67e22',
+                border: '2px solid #c41e3a', 
+                color: '#ffB900',
                 backgroundColor: 'transparent'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#e67e22';
+                e.currentTarget.style.backgroundColor = '#c41e3a';
                 e.currentTarget.style.color = 'white';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.color = '#e67e22';
+                e.currentTarget.style.color = '#ffB900';
               }}
             >
               Falar com Suporte
@@ -66,15 +66,15 @@ export function CTASection() {
           <div className="mt-12 pt-8 border-t border-[#2a2a2a]">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-[#c41e3a] mb-1">100%</div>
+                <div className="text-3xl font-bold text-[#ffB900] mb-1">100%</div>
                 <div className="text-gray-400">Seguro</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#c41e3a] mb-1">24/7</div>
+                <div className="text-3xl font-bold text-[#ffB900] mb-1">24/7</div>
                 <div className="text-gray-400">Suporte</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#c41e3a] mb-1">10k+</div>
+                <div className="text-3xl font-bold text-[#ffB900] mb-1">10k+</div>
                 <div className="text-gray-400">Vaqueiros</div>
               </div>
             </div>
